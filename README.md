@@ -152,6 +152,9 @@ endmodule
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
 
+## SR FLIP FLOP:
+![1](https://github.com/harish-ragavendra-25/Experiment--05-Implementation-of-flipflops-using-verilog/assets/114852180/f081abd6-1e87-453f-93f5-7a6a9d3a0401)
+
 
 
 
