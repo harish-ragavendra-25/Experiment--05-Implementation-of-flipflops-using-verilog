@@ -164,6 +164,21 @@ Qbar=~D;
 end
 endmodule
 ```
+## T FLIP FLOP:
+```
+module flipflopt(T,clk,Q,Qbar);
+input T,clk;
+output reg Q;
+output reg Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge clk)
+begin
+Q=(T&(~Q))|((~T)&Q);
+Qbar=((~T)&Qbar)|(T&(~Qbar));
+end
+endmodule
+```
 
 
 
@@ -178,6 +193,8 @@ endmodule
 ## D FLIP FLOP:
 ![d](https://github.com/harish-ragavendra-25/Experiment--05-Implementation-of-flipflops-using-verilog/assets/114852180/227e9cd6-0abf-4cf4-a8fe-1317d0d1496d)
 
+## T FLIP FLOP:
+![t](https://github.com/harish-ragavendra-25/Experiment--05-Implementation-of-flipflops-using-verilog/assets/114852180/76bf52c3-108d-4b43-b49c-d3bc961e9f2b)
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
 
