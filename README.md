@@ -113,11 +113,11 @@ Q(t+1)=T′Q(t)+TQ(t)′
 
 
 ### PROGRAM 
-/*
+```
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
 Developed by: HARISH RAGAVENDRA S
 RegisterNumber:  212222230045
-*/
+```
 
 ## SR FLIP FLOP:
 ```
@@ -136,7 +136,18 @@ endmodule
 ## JK FLIP FLOP:
 
 ```
-
+module jk(J,K,clk,Q,Qbar);
+input J,K,clk;
+output reg Q;
+output reg Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge clk)
+begin
+Q=(J&(~Q))|((~K)&Q);
+Qbar=((~J)&(Qbar))|K&(~Qbar);
+end
+endmodule
 ```
 
 
@@ -146,7 +157,8 @@ endmodule
 ### RTL LOGIC FOR FLIPFLOPS 
 ## SR FLIP FLOP:
 ![Screenshot 2023-05-18 111737](https://github.com/harish-ragavendra-25/Experiment--05-Implementation-of-flipflops-using-verilog/assets/114852180/d58ad684-bbff-4a6f-b91c-290d5d30364a)
-
+## JK FLIP FLOP:
+![jk](https://github.com/harish-ragavendra-25/Experiment--05-Implementation-of-flipflops-using-verilog/assets/114852180/11e43466-d3e4-48b0-8afd-5ad265df0a0b)
 
 
 
@@ -155,7 +167,7 @@ endmodule
 ## SR FLIP FLOP:
 ![1](https://github.com/harish-ragavendra-25/Experiment--05-Implementation-of-flipflops-using-verilog/assets/114852180/f081abd6-1e87-453f-93f5-7a6a9d3a0401)
 
-
+## JK FLIP FLOP:
 
 
 
