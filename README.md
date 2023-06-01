@@ -207,6 +207,8 @@ endmodule
 ## D FLIP FLOP:
 ![d](https://github.com/harish-ragavendra-25/Experiment--05-Implementation-of-flipflops-using-verilog/assets/114852180/f1addbdd-1317-4d1b-927c-f68ec4e84641)
 
-
+## T FLIP FLOP:
+![Screenshot 2023-06-01 111848](https://github.com/harish-ragavendra-25/Experiment--05-Implementation-of-flipflops-using-verilog/assets/114852180/31b250e1-755e-4c25-b436-c663944578ba)
 
 ### RESULTS 
+Thus the given SR,T,D,JK flip flops are shown and executed sucessfully.
